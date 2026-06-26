@@ -12,7 +12,7 @@ export default function Hero() {
 
   const brands = ["V8", "HELPO", "PUREZA", "OMNIA", "SAVILLE", "WEHELP"];
 
-  const mobileProjects = [
+  const mobileProjects = [ 
     {
       id: "01",
       title: "Luxury Logo",
@@ -116,7 +116,8 @@ export default function Hero() {
                       <Image
                         src={src}
                         alt={`Client ${index + 1}`}
-                        fill
+                        height={65}
+                        width={65}
                         className="object-cover"
                       />
                     </div>
@@ -181,7 +182,8 @@ export default function Hero() {
                           <Image
                             src={item.image}
                             alt={item.title}
-                            fill
+                            height={400}
+                            width={400} 
                             className="object-cover transition duration-700 group-hover:scale-[1.05]"
                           />
                           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.16)_30%,rgba(0,0,0,0.75)_100%)]" />
@@ -270,7 +272,8 @@ export default function Hero() {
                 <Image
                   src="/images/project/project-1.jpg"
                   alt="Project-1"
-                  fill
+                  height={400}
+                  width={400} 
                   className="object-cover"
                 />
               </div>
@@ -296,7 +299,8 @@ export default function Hero() {
                 <Image
                   src="/images/project/project-2.jpg"
                   alt="Project-2"
-                  fill
+                  height={400}
+                  width={400} 
                   className="object-cover"
                 />
               </div>
@@ -336,7 +340,8 @@ export default function Hero() {
                 <Image
                   src="/images/project/project-3.jpg"
                   alt="Project 3"
-                  fill
+                  height={400}
+                  width={400} 
                   className="object-cover"
                 />
               </div>
@@ -368,7 +373,8 @@ export default function Hero() {
                 <Image
                   src="/images/project/project-4.jpg"
                   alt="Project-4"
-                  fill
+                  height={400}
+                  width={400} 
                   className="object-cover"
                 />
               </div>

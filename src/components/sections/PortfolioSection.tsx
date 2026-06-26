@@ -123,7 +123,8 @@ export default function PortfolioSection() {
                 <Image
                   src={item.image}
                   alt={item.title}
-                  fill
+                  height={400}
+                  width={700} 
                   className="object-cover transition duration-700 group-hover:scale-[1.05]"
                 />
 
@@ -179,7 +180,8 @@ export default function PortfolioSection() {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    fill
+                    height={400} 
+                    width={400} 
                     className="object-cover transition duration-700 group-hover:scale-[1.08]"
                   />
 
