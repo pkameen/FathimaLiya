@@ -30,9 +30,9 @@ const services = [
     ],
   },
   {
-    id: "digital-marketing",
+    id: "Social Media Marketing",
     number: "03",
-    title: "Digital Marketing",
+    title: "Social Media Marketing",
     mini: "Creative marketing support with stronger visual communication",
     description:
       "Creative support for digital marketing through ad visuals, campaign presentation, promotional assets and content-ready design materials. The focus is on making campaigns look stronger, cleaner and more visually effective through refined creative direction.",
@@ -215,7 +215,7 @@ export default function ServicesSection() {
                     >
                       <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-white/55" />
                       <p className="text-sm leading-7 text-white/60">{point}</p>
-                    </div>
+                    </div> 
                   ))}
                 </div>
               </div>

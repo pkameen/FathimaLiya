@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const intro = {
-  title: "Graphic Designer & Digital Marketing Creative",
+  title: "Graphic Designer & Social Media Marketing & Creative",
   text1:
     "I’m Liya — a creative designer focused on building premium brand visuals, social media creatives and presentation-driven design systems. My work is built around helping brands look cleaner, stronger and more visually memorable through thoughtful layouts, refined styling and polished execution.",
   text2:
@@ -14,7 +14,7 @@ const expertise = [
   "Graphic Design",
   "Social Media Creatives",
   "Brand Presentation",
-  "Digital Marketing Support",
+  "Social Media Marketing Support",
   "Poster Design",
   "Campaign Visuals",
 ];
@@ -26,7 +26,7 @@ const education = [
     year: "2025 – Present",
   },
   {
-    title: "Graphic Design & Digital Marketing",
+    title: "Graphic Design & Social Media Marketing",
     place: "Nile Institute, Manjeri",
     year: "Expected Graduation: 2026",
   },
@@ -74,8 +74,7 @@ const personal = [
 const contact = [
   { label: "Email", value: "liyahpk53@gmail.com" },
   { label: "Phone", value: "+91 90489 54518" },
-  { label: "Instagram", value: "@_Vebbadesign_" },
-  { label: "Behance", value: "behance.net/Vebbadesign" },
+  { label: "Instagram", value: "@liya_dsgn" },
 ];
 
 type AccordionItemProps = {
@@ -153,7 +152,7 @@ export default function AboutSection() {
             <div className="relative z-10">
               <span className="eyebrow !mb-0">Profile</span>
               <h3 className="mt-4 text-[2.3rem] font-semibold tracking-[0.08em] text-white">
-                LIYA
+                FATHIMA LIYA
               </h3>
               <p className="mt-4 max-w-xl text-sm leading-8 text-white/62">
                 {intro.title}
@@ -377,7 +376,7 @@ export default function AboutSection() {
                 <span className="eyebrow !mb-0">Profile</span>
 
                 <h3 className="mt-5 text-[3rem] font-semibold leading-none tracking-[0.08em] text-white 2xl:text-[3.2rem]">
-                  LIYA
+                  FATHIMA LIYA
                 </h3>
 
                 <p className="mt-5 max-w-md text-[15px] leading-8 text-white/62">
@@ -630,7 +629,7 @@ export default function AboutSection() {
                   <div className="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-5">
                     <p className="text-[11px] uppercase tracking-[0.24em] text-white/32">
                       Primary Focus
-                    </p>
+                    </p> 
                     <p className="mt-3 text-lg font-semibold leading-8 text-white">
                       Branding, social creatives and premium design presentation
                     </p>

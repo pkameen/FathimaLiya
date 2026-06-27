@@ -58,7 +58,7 @@ export default function Hero() {
               <span className="h-2 w-2 rounded-full bg-white/75 shadow-[0_0_18px_rgba(255,255,255,0.9)]" />
               <span>Graphic Designer</span>
               <span className="text-white/28">•</span>
-              <span>Digital Marketer</span>
+              <span>Social Media Marketing</span>
             </div>
 
             <h1 className="mt-7 max-w-[760px] leading-[0.92] tracking-[-0.045em] sm:leading-[0.9]">
@@ -108,7 +108,9 @@ export default function Hero() {
               {/* left client block */}
               <div className="flex min-w-0 items-center gap-3 sm:gap-4">
                 <div className="flex -space-x-3">
-                  {["/images/avatar/avatar-1.jpg"].map((src, index) => (
+                  {["/images/avatar/avatar-1.jpg",
+                    "/images/avatar/avatar-2.jpg",
+                  ].map((src, index) => (
                     <div
                       key={index}
                       className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full border border-white/15 bg-[linear-gradient(135deg,#2d2d2d,#101010)] shadow-[0_12px_24px_rgba(0,0,0,0.35)] ring-2 ring-black sm:h-12 sm:w-12"
@@ -116,8 +118,8 @@ export default function Hero() {
                       <Image
                         src={src}
                         alt={`Client ${index + 1}`}
-                        height={65}
-                        width={65}
+                        height={100}
+                        width={100}
                         className="object-cover"
                       />
                     </div>

@@ -9,14 +9,13 @@ const footerLinks = {
   services: [
     "Graphic Design",
     "Social Media Creatives",
-    "Digital Marketing",
+    "Social Media Marketing",
     "Brand Presentation",
   ],
   contact: [
     { label: "Email", value: "liyahpk53@gmail.com" },
     { label: "Phone", value: "+91 90489 54518" },
     { label: "Instagram", value: "@liya_dsgn" },
-    { label: "Behance", value: "behance.net/Vebbadesign" },
   ],
 };
 

@@ -10,15 +10,15 @@ const services = [
     text: "High-quality branded posts, promotional visuals and social content systems.",
   },
   {
-    title: "Digital Marketing",
+    title: "Social Media Marketing",
     text: "Creative marketing support with stronger presentation, ad visuals and campaign direction.",
   },
 ];
 
 const featuredProjects = [
   {
-    eyebrow: "Branding / Campaign",
-    title: "Luxury Brand Campaign",
+    eyebrow: "Branding / Logo",
+    title: "Luxury Brand Logo",
     text: "A premium visual direction crafted for stronger brand recall, cleaner presentation and high-end communication.",
     image: "/images/portfolio/portfolio-1.jpg",
   },
@@ -56,7 +56,7 @@ const galleryItems = [
     image: "/images/portfolio/portfolio-4.jpg",
   },
   {
-    title: "Digital Ad Creative",
+    title: "Prodect Marketing Creative",
     category: "Marketing Visual",
     year: "2026",
     image: "/images/portfolio/portfolio-5.jpg",
@@ -67,9 +67,85 @@ const galleryItems = [
     year: "2026",
     image: "/images/portfolio/portfolio-6.jpg",
   },
+  {
+    title: "Product Promo Visual",
+    category: "Campaign Creative",
+    year: "2026",
+    image: "/images/portfolio/portfolio-7.jpg",
+  },
+  {
+    title: "Grow Marketing Visual",
+    category: "Marketing Visual",
+    year: "2026",
+    image: "/images/portfolio/portfolio-8.jpg",
+  },
+  {
+    title: "Promotional Design Set",
+    category: "Creative Direction",
+    year: "2026",
+    image: "/images/portfolio/portfolio-9.jpg",
+  },
+  {
+    title: "Education Poster Design",
+    category: "Creative Direction",
+    year: "2026",
+    image: "/images/portfolio/portfolio-10.jpg",
+  },
+];
+
+const gallerylogoItems = [
+  {
+    title: "Brand Logo Series",
+    category: "Illustrator Design",
+    year: "2026",
+    image: "/images/logos/logo-1.jpg",
+  },
+  {
+    title: "Brand Logo Series",
+    category: "Illustrator Design",
+    year: "2026",
+    image: "/images/logos/logo-2.jpg",
+  },
+  {
+    title: "Brand Logo Series",
+    category: "Illustrator Design",
+    year: "2026",
+    image: "/images/logos/logo-3.jpg",
+  },
+  {
+    title: "Brand Logo Series",
+    category: "Illustrator Design",
+    year: "2026",
+    image: "/images/logos/logo-4.jpg",
+  },
+  {
+    title: "Brand Logo Series",
+    category: "Illustrator Design",
+    year: "2026",
+    image: "/images/logos/logo-5.jpg",
+  },
+  {
+    title: "Brand Logo Series",
+    category: "Illustrator Design",
+    year: "2026",
+    image: "/images/logos/logo-6.jpg",
+  },
+  {
+    title: "Brand Logo Series",
+    category: "Illustrator Design",
+    year: "2026",
+    image: "/images/logos/logo-7.jpg",
+  },
+  {
+    title: "Brand Logo Series",
+    category: "Illustrator Design",
+    year: "2026",
+    image: "/images/logos/logo-8.jpg",
+  },
 ];
 
 const marqueeItems = [...galleryItems, ...galleryItems];
+const marqueelogoItems = [...gallerylogoItems, ...gallerylogoItems];
 
 export default function PortfolioSection() {
   return (
@@ -180,9 +256,54 @@ export default function PortfolioSection() {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    height={400} 
-                    width={400} 
+                    height={1000} 
+                    width={1000} 
                     className="object-cover transition duration-700 group-hover:scale-[1.08]"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/25 to-transparent" />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.45))]" />
+
+                  <div className="absolute left-5 right-5 top-5 flex items-center justify-between">
+                    <span className="rounded-full border border-white/15 bg-black/35 px-3 py-1 text-[10px] uppercase tracking-[0.26em] text-white/70 backdrop-blur-md">
+                      {item.category}
+                    </span>
+                    <span className="rounded-full border border-white/15 bg-black/35 px-3 py-1 text-[10px] uppercase tracking-[0.26em] text-white/60 backdrop-blur-md">
+                      {item.year}
+                    </span>
+                  </div>
+
+                  <div className="absolute bottom-0 left-0 right-0 p-5">
+                    <div className="rounded-[1.25rem] border border-white/10 bg-black/35 p-4 backdrop-blur-md">
+                      <h4 className="text-lg font-semibold text-white">
+                        {item.title}
+                      </h4>
+                      <p className="mt-1 text-sm text-white/60">
+                        {item.category}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        {/* AUTO LOGO GALLERY */}
+        <div className="logo-marquee-wrap mt-10">
+          <div className="logo-marquee-track">
+            {marqueelogoItems.map((item, index) => (
+              <article
+                key={`${item.title}-${index}`}
+                className="logo-gallery-card group"
+              >
+                <div className="relative h-full w-full overflow-hidden rounded-[1.8rem]">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    height={1000} 
+                    width={1000} 
+                    className="object-cover transition duration-700 group-hover:scale-[1.20]"
                   />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/25 to-transparent" />
